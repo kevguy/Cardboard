@@ -28,8 +28,8 @@ public class VideoCardboard extends CardboardActivity{
     private static final String mStoragePath = "CardBoardDemo";
     //private static final String mLeftVideoName = "left.avi";
     //private static final String mRightVideoName = "right.avi";
-    private static final String mLeftVideoName = "left.mp4";
-    private static final String mRightVideoName = "right.mp4";
+    private static final String mLeftVideoName = "vidLeft.mp4";
+    private static final String mRightVideoName = "vidRight.mp4";
 
     private String mExtLeftVideo = "";
     private String mExtRightVideo = "";

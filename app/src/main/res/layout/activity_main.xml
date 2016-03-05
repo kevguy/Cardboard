@@ -6,183 +6,199 @@
     android:padding="20dp">
 
 
-    <Button
-        android:id = "@+id/btn_image_cardboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start Image Cardboard"/>
-    <TextView
-        android:id = "@+id/text_img"
-        android:layout_below="@id/btn_image_cardboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add own image?"/>
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/img_radio_grp"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/text_img">
-        <RadioButton android:id="@+id/radio_image_yes"
+        <Button
+            android:id = "@+id/btn_image_cardboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Yes"
-            android:onClick="onImageButtonClicked"/>
-        <RadioButton android:id="@+id/radio_image_no"
+            android:text="Start Image Cardboard"/>
+        <TextView
+            android:id = "@+id/text_img"
+            android:layout_below="@id/btn_image_cardboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No"
-            android:onClick="onImageButtonClicked"/>
-    </RadioGroup>
-    <Button
-        android:id = "@+id/btn_img_left"
-        android:layout_below="@id/img_radio_grp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Left"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="none"
-        android:id="@+id/img_left_path"
-        android:layout_toRightOf="@id/btn_img_left"
-        android:layout_below="@id/img_radio_grp"/>
-    <Button
-        android:id = "@+id/btn_img_right"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/img_left_path"
-        android:layout_below="@id/img_radio_grp"
-        android:text="Right"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sdvsdvsdv"
-        android:id="@+id/img_right_path"
-        android:layout_toRightOf="@id/btn_img_right"
-        android:layout_below="@id/img_radio_grp"/>
-    <Button
-        android:id = "@+id/btn_video_cardboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_img_left"
-        android:text="Start Video Cardboard"/>
-    <TextView
-        android:id="@+id/text_video"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_video_cardboard"
-        android:text="Choose own video?"/>
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/video_radio_grp"
-        android:layout_below="@id/text_video">
-        <RadioButton android:id="@+id/radio_video_yes"
+            android:text="Add own image?"/>
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/img_radio_grp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/text_img">
+            <RadioButton android:id="@+id/radio_image_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onImageButtonClicked"/>
+            <RadioButton android:id="@+id/radio_image_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onImageButtonClicked"/>
+        </RadioGroup>
+        <Button
+            android:id = "@+id/btn_img_left"
+            android:layout_below="@id/img_radio_grp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Yes"
-            android:onClick="onVideoButtonClicked"/>
-        <RadioButton android:id="@+id/radio_video_no"
+            android:text="Left"/>
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No"
-            android:onClick="onVideoButtonClicked"/>
-    </RadioGroup>
-    <Button
-        android:id = "@+id/btn_video_left"
-        android:layout_below="@id/video_radio_grp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Left"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="none"
-        android:id="@+id/video_left_path"
-        android:layout_toRightOf="@id/btn_video_left"
-        android:layout_below="@id/video_radio_grp"/>
-    <Button
-        android:id = "@+id/btn_video_right"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/video_left_path"
-        android:layout_below="@id/video_radio_grp"
-        android:text="Right"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sdvsdvsdv"
-        android:id="@+id/video_right_path"
-        android:layout_toRightOf="@id/btn_video_right"
-        android:layout_below="@id/video_radio_grp"/>
-    <Button
-        android:id = "@+id/btn_pano_cardboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_video_left"
-        android:text="Start Panorama Cardboard"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/text_pano"
-        android:layout_below="@id/btn_pano_cardboard"
-        android:text="Choose own image?"/>
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/pano_radio_grp"
-        android:layout_below="@id/text_pano"
-        android:orientation="horizontal">
-        <RadioButton android:id="@+id/radio_pano_yes"
+            android:text="none"
+            android:id="@+id/img_left_path"
+            android:layout_toRightOf="@id/btn_img_left"
+            android:layout_below="@id/img_radio_grp"/>
+        <Button
+            android:id = "@+id/btn_img_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Yes"
-            android:onClick="onPanoButtonClicked"/>
-        <RadioButton android:id="@+id/radio_pano_no"
+            android:layout_toRightOf="@id/img_left_path"
+            android:layout_below="@id/img_radio_grp"
+            android:text="Right"/>
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No"
-            android:onClick="onPanoButtonClicked"/>
-    </RadioGroup>
-    <Button
-        android:id = "@+id/btn_pano_left"
-        android:layout_below="@id/pano_radio_grp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Left"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="none"
-        android:id="@+id/pano_left_path"
-        android:layout_toRightOf="@id/btn_pano_left"
-        android:layout_below="@id/pano_radio_grp"/>
-    <Button
-        android:id = "@+id/btn_pano_right"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/pano_left_path"
-        android:layout_below="@id/pano_radio_grp"
-        android:text="Right"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sdvsdvsdv"
-        android:id="@+id/pano_right_path"
-        android:layout_toRightOf="@id/btn_pano_right"
-        android:layout_below="@id/pano_radio_grp"/>
-    <Button
-        android:id = "@+id/btn_sel"
-        android:layout_below="@id/btn_pano_left"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/test_path"
-        android:layout_toRightOf="@id/btn_sel"
-        android:layout_below="@id/btn_pano_left"/>
+            android:text="sdvsdvsdv"
+            android:id="@+id/img_right_path"
+            android:layout_toRightOf="@id/btn_img_right"
+            android:layout_below="@id/img_radio_grp"/>
+        <View
+            android:layout_below="@id/btn_img_left"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#FF0000FF" />
+        <Button
+            android:id = "@+id/btn_video_cardboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_img_left"
+            android:text="Start Video Cardboard"/>
+        <TextView
+            android:id="@+id/text_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_video_cardboard"
+            android:text="Choose own video?"/>
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/video_radio_grp"
+            android:layout_below="@id/text_video">
+            <RadioButton android:id="@+id/radio_video_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onVideoButtonClicked"/>
+            <RadioButton android:id="@+id/radio_video_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onVideoButtonClicked"/>
+        </RadioGroup>
+        <Button
+            android:id = "@+id/btn_video_left"
+            android:layout_below="@id/video_radio_grp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="none"
+            android:id="@+id/video_left_path"
+            android:layout_toRightOf="@id/btn_video_left"
+            android:layout_below="@id/video_radio_grp"/>
+        <Button
+            android:id = "@+id/btn_video_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/video_left_path"
+            android:layout_below="@id/video_radio_grp"
+            android:text="Right"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdvsdvsdv"
+            android:id="@+id/video_right_path"
+            android:layout_toRightOf="@id/btn_video_right"
+            android:layout_below="@id/video_radio_grp"/>
+        <View
+            android:layout_below="@id/btn_video_left"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#FF0000FF" />
+        <Button
+            android:id = "@+id/btn_pano_cardboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_video_left"
+            android:text="Start Panorama Cardboard"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_pano"
+            android:layout_below="@id/btn_pano_cardboard"
+            android:text="Choose own image?"/>
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pano_radio_grp"
+            android:layout_below="@id/text_pano"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/radio_pano_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onPanoButtonClicked"/>
+            <RadioButton android:id="@+id/radio_pano_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onPanoButtonClicked"/>
+        </RadioGroup>
+        <Button
+            android:id = "@+id/btn_pano_left"
+            android:layout_below="@id/pano_radio_grp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="none"
+            android:id="@+id/pano_left_path"
+            android:layout_toRightOf="@id/btn_pano_left"
+            android:layout_below="@id/pano_radio_grp"/>
+        <Button
+            android:id = "@+id/btn_pano_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pano_left_path"
+            android:layout_below="@id/pano_radio_grp"
+            android:text="Right"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdvsdvsdv"
+            android:id="@+id/pano_right_path"
+            android:layout_toRightOf="@id/btn_pano_right"
+            android:layout_below="@id/pano_radio_grp"/>
+        <View
+            android:layout_below="@id/btn_pano_left"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#FF0000FF" />
+        <Button
+            android:id = "@+id/btn_sel"
+            android:layout_below="@id/btn_pano_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/test_path"
+            android:layout_toRightOf="@id/btn_sel"
+            android:layout_below="@id/btn_pano_left"/>
+
 </RelativeLayout>

@@ -35,8 +35,8 @@ import java.io.OutputStreamWriter;
 public class ImageCardboard extends CardboardActivity {
 
     private static final String mStoragePath = "CardBoardDemo";
-    private static final String mLeftImageName = "left.bmp";
-    private static final String mRightImageName = "right.bmp";
+    private static final String mLeftImageName = "imgLeft.bmp";
+    private static final String mRightImageName = "imgRight.bmp";
 
     private String mExtLeftImg = "";
     private String mExtRightImg = "";
