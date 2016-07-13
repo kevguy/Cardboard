@@ -2,6 +2,7 @@
 - Android app for viewing 3D images, videos and panorama images using Google Cardboard 
 - Wrote Matlab code for generating stereoscope images and videos using DIBR Algorithm 
 - Implemented a simple PhotoSphere using gyroscope sensors for viewing panorama images 
+
 ## Image Cardboard
 The default images are stored in a folder called **CardBoardDemo** in the home directory. And the image names are _imgLeft.bmp_ and _imgRight.bmp_. In the menu, you can choose your own images and when entering viewing mode. You can switch the default images and chosen pictures by triggering the magent. 
 
