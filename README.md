@@ -3,6 +3,7 @@
 - Originally it was a project for my Computational Photography class, so it was all native Java code instead of using Unity
 - Matlab code was written for generating stereoscope images and videos using DIBR Algorithm 
 - A simple PhotoSphere was implemented using gyroscope sensors for viewing panorama images 
+- Implementation details can be found here: http://kevlaichungsing.blogspot.hk/2016/07/google-cardboard.html
 
 ## Image Cardboard
 The default images are stored in a folder called **CardBoardDemo** in the home directory. And the image names are _imgLeft.bmp_ and _imgRight.bmp_. In the app menu, you can choose your own images and when entering viewing mode, you can switch the default images and your chosen pictures by triggering the magent. 
